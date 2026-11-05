@@ -88,7 +88,7 @@ namespace SG.Examples
                     angleCanvas.constraintCount = columns;
 
                     angleBoxes = new Text[sensors.Length][];
-                    Font arialFont = (Font)Resources.GetBuiltinResource(typeof(Font), "Arial.ttf");
+                    Font arialFont = (Font)Resources.GetBuiltinResource(typeof(Font), "LegacyRuntime.ttf");
                     // fingers = row, sensors = column
                     for (int f = 0; f < sensors.Length; f++)
                     {

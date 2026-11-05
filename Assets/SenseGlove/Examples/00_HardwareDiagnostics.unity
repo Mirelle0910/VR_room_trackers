@@ -93,10 +93,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: f430c38675578084297a71ea9561b999,
-    type: 2}
-  m_LightingSettings: {fileID: 4890085278179872738, guid: d744effa4567b6d4ebe262408bf72d85,
-    type: 2}
+  m_LightingDataAsset: {fileID: 112000000, guid: f430c38675578084297a71ea9561b999, type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: d744effa4567b6d4ebe262408bf72d85, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -664,8 +662,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 72018858}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.000000014901163, y: 0.00000030919912, z: -0.00000011734665,
-    w: 1}
+  m_LocalRotation: {x: 0.000000014901163, y: 0.00000030919912, z: -0.00000011734665, w: 1}
   m_LocalPosition: {x: 0, y: 0.000285, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1271,7 +1268,7 @@ MonoBehaviour:
   TrackedHand: {fileID: 0}
   debugEnabled: 0
   handModelInfo: {fileID: 2017636439}
-  updateFingers: 0101010101
+  updateFingers: 0101010101y
   imuForWrist: 0
 --- !u!1 &139103429
 GameObject:
@@ -1628,6 +1625,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
+  m_UseReflectionProbes: 0
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
@@ -2208,8 +2206,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 214901812}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.000000014901163, y: 0.00000030919912, z: -0.00000011734665,
-    w: 1}
+  m_LocalRotation: {x: 0.000000014901163, y: 0.00000030919912, z: -0.00000011734665, w: 1}
   m_LocalPosition: {x: 0, y: 0.000285, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2291,6 +2288,54 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 222900745}
   m_CullTransparentMesh: 0
+--- !u!1 &237771748
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 237771750}
+  - component: {fileID: 237771749}
+  m_Layer: 0
+  m_Name: SG_XR_SceneTrackingLinks
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &237771749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 237771748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3aaa2b1a3fd824943ada96ae0fe42cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SG_XR_SceneTrackingLinks
+  xrRig: {fileID: 0}
+  head: {fileID: 1950998816}
+  leftHandTrackingDevice: {fileID: 0}
+  rightHandTrackingDevice: {fileID: 0}
+--- !u!4 &237771750
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 237771748}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.23789, y: 1.55595, z: 0.64473}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &245584710
 GameObject:
   m_ObjectHideFlags: 0
@@ -2792,8 +2837,7 @@ MeshRenderer:
 --- !u!65 &270067079
 BoxCollider:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 65312241874628910, guid: bfcf706ae5fde5a43b23b7cd13012906,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 270067076}
@@ -4473,6 +4517,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
+  m_UseReflectionProbes: 0
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
@@ -4929,8 +4974,7 @@ MeshRenderer:
 --- !u!65 &472036404
 BoxCollider:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 65105741087012968, guid: bfcf706ae5fde5a43b23b7cd13012906,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 472036401}
@@ -5074,6 +5118,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
+  m_UseReflectionProbes: 0
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
@@ -5597,7 +5642,7 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519562777}
   m_Enabled: 1
-  serializedVersion: 12
+  serializedVersion: 13
   m_Type: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
@@ -5649,7 +5694,7 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ForceVisible: 0
-  m_ShadowRadius: 0
+  m_ShapeRadius: 0
   m_ShadowAngle: 0
   m_LightUnit: 1
   m_LuxAtDistance: 1
@@ -6109,6 +6154,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
+  m_UseReflectionProbes: 0
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
@@ -6329,6 +6375,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
+  m_UseReflectionProbes: 0
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
@@ -6376,8 +6423,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 590378971}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.00000036193526, y: 0.00000038277358, z: 0.0000000018626456,
-    w: 1}
+  m_LocalRotation: {x: -0.00000036193526, y: 0.00000038277358, z: 0.0000000018626456, w: 1}
   m_LocalPosition: {x: 0, y: 0.000283, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6609,6 +6655,7 @@ MonoBehaviour:
   projectionLayer: {fileID: 0}
   calibration: {fileID: 814954879}
   statusIndicator: {fileID: 1445845394}
+  teleportLayer: {fileID: 0}
   otherComponents: []
   overrideWristLocation: 1
   showRealPose: 0
@@ -8113,6 +8160,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
+  m_UseReflectionProbes: 0
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
@@ -8277,8 +8325,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 835264078}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000033900142, y: -0.0000003706664, z: -0.000000100582845,
-    w: 1}
+  m_LocalRotation: {x: 0.00000033900142, y: -0.0000003706664, z: -0.000000100582845, w: 1}
   m_LocalPosition: {x: -0, y: 0.000192, z: 0}
   m_LocalScale: {x: 0.99999994, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -8636,6 +8683,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
+  m_UseReflectionProbes: 0
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
@@ -8744,8 +8792,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 912881561}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.0000000013969839, y: 0.000000054016706, z: 0.00000004656613,
-    w: 1}
+  m_LocalRotation: {x: -0.0000000013969839, y: 0.000000054016706, z: 0.00000004656613, w: 1}
   m_LocalPosition: {x: -0, y: 0.000258, z: 0}
   m_LocalScale: {x: 1, y: 1.0000001, z: 1.0000001}
   m_ConstrainProportionsScale: 0
@@ -9116,6 +9163,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
+  m_UseReflectionProbes: 0
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
@@ -9222,8 +9270,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 958276939}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.00000036193526, y: 0.00000038277358, z: 0.0000000018626456,
-    w: 1}
+  m_LocalRotation: {x: -0.00000036193526, y: 0.00000038277358, z: 0.0000000018626456, w: 1}
   m_LocalPosition: {x: 0, y: 0.000283, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -10125,6 +10172,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
+  m_UseReflectionProbes: 0
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
@@ -10778,6 +10826,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
+  m_UseReflectionProbes: 0
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
@@ -10808,7 +10857,7 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1172706371}
   m_Enabled: 1
-  serializedVersion: 12
+  serializedVersion: 13
   m_Type: 1
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
   m_Intensity: 1
@@ -10860,7 +10909,7 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ForceVisible: 0
-  m_ShadowRadius: 0
+  m_ShapeRadius: 0
   m_ShadowAngle: 0
   m_LightUnit: 1
   m_LuxAtDistance: 1
@@ -10904,8 +10953,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1174890064}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.0000000013969839, y: 0.000000054016706, z: 0.00000004656613,
-    w: 1}
+  m_LocalRotation: {x: -0.0000000013969839, y: 0.000000054016706, z: 0.00000004656613, w: 1}
   m_LocalPosition: {x: -0, y: 0.000258, z: 0}
   m_LocalScale: {x: 1, y: 1.0000001, z: 1.0000001}
   m_ConstrainProportionsScale: 0
@@ -11229,8 +11277,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1246929109}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.0000004319009, y: -0.0000004777685, z: 0.000000025145711,
-    w: 1}
+  m_LocalRotation: {x: 0.0000004319009, y: -0.0000004777685, z: 0.000000025145711, w: 1}
   m_LocalPosition: {x: -0, y: 0.000269, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -12224,6 +12271,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
+  m_UseReflectionProbes: 0
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
@@ -14652,6 +14700,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
+  m_UseReflectionProbes: 0
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
@@ -15098,6 +15147,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
+  m_UseReflectionProbes: 0
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
@@ -15221,6 +15271,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
+  m_UseReflectionProbes: 0
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
@@ -15285,8 +15336,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1625975131}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.0000004319009, y: -0.0000004777685, z: 0.000000025145711,
-    w: 1}
+  m_LocalRotation: {x: 0.0000004319009, y: -0.0000004777685, z: 0.000000025145711, w: 1}
   m_LocalPosition: {x: -0, y: 0.000269, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -15487,8 +15537,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Advanced SenseGlove Diagnostics Scene FOR DK1 AND NOVA 1.0 ONLY!
 
-    Used
-    to test hardware functions'
+    Used to test hardware functions'
 --- !u!222 &1649617303
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15761,8 +15810,7 @@ MeshRenderer:
 --- !u!65 &1680500402
 BoxCollider:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 65617042798091524, guid: bfcf706ae5fde5a43b23b7cd13012906,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1680500399}
@@ -16224,6 +16272,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
+  m_UseReflectionProbes: 0
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
@@ -16733,6 +16782,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
+  m_UseReflectionProbes: 0
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
@@ -16875,7 +16925,7 @@ MonoBehaviour:
   TrackedHand: {fileID: 0}
   debugEnabled: 0
   handModelInfo: {fileID: 1445845393}
-  updateFingers: 0101010101
+  updateFingers: 0101010101y
   imuForWrist: 0
 --- !u!1 &1768064313
 GameObject:
@@ -17627,6 +17677,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
+  m_UseReflectionProbes: 0
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
@@ -17656,8 +17707,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1841821713}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000033900142, y: -0.0000003706664, z: -0.000000100582845,
-    w: 1}
+  m_LocalRotation: {x: 0.00000033900142, y: -0.0000003706664, z: -0.000000100582845, w: 1}
   m_LocalPosition: {x: -0, y: 0.000192, z: 0}
   m_LocalScale: {x: 0.99999994, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -19313,6 +19363,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
+  m_UseReflectionProbes: 0
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
@@ -19677,6 +19728,7 @@ MonoBehaviour:
   projectionLayer: {fileID: 0}
   calibration: {fileID: 1445674838}
   statusIndicator: {fileID: 2017636440}
+  teleportLayer: {fileID: 0}
   otherComponents: []
   overrideWristLocation: 1
   showRealPose: 0
@@ -20088,6 +20140,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
+  m_UseReflectionProbes: 0
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
@@ -20589,3 +20642,4 @@ SceneRoots:
   - {fileID: 1172706373}
   - {fileID: 519562779}
   - {fileID: 2146811000}
+  - {fileID: 237771750}

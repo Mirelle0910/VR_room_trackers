@@ -411,7 +411,7 @@ namespace SG
                 return;
             }
             //a file was certainly assigned. So we should be able to pass it on without checking for length(s).
-            string assetPath = AssetDatabase.GetAssetPath(fileAsset.objectReferenceValue.GetInstanceID());
+            string assetPath = AssetDatabase.GetAssetPath(fileAsset.objectReferenceValue);
 
 
 
