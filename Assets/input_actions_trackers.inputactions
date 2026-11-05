@@ -59,6 +59,42 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "R_wrist_pos",
+                    "type": "Value",
+                    "id": "d8546573-a63a-494d-8ba6-f2173f0b38cd",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "L_wrist_pos1",
+                    "type": "Value",
+                    "id": "aafcaa3c-0c81-4941-9f02-9c20d01a0607",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "R_wrist_rot",
+                    "type": "Value",
+                    "id": "941db218-068b-4d8d-9002-1986423462d5",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "L_wrist_rot1",
+                    "type": "Value",
+                    "id": "6b4d848b-4f43-43cc-a328-fb9c98f1001f",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -191,6 +227,61 @@
                     "processors": "",
                     "groups": "",
                     "action": "L_leg_rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9662c952-4e97-4f5f-8d42-8b684f697c24",
+                    "path": "<XRViveTracker>{Right Elbow}/devicePose/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "R_wrist_pos",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f458e1f1-97e1-469e-8272-a19959eeff89",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "R_wrist_pos",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cf17b131-d818-4b2d-af04-b0f34288e620",
+                    "path": "<XRViveTracker>{Left Elbow}/devicePose/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "L_wrist_pos1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "81249f2d-20ee-4d8e-bd7f-87d51930fdb7",
+                    "path": "<XRViveTracker>{Right Elbow}/devicePose/rotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "R_wrist_rot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "216ac4f4-3c2f-4109-b0a5-94d5f4833001",
+                    "path": "<XRViveTracker>{Left Elbow}/devicePose/rotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "L_wrist_rot1",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
